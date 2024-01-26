@@ -1,13 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+	</head>
+	<body>
+		<div id="app" class="container">
+			<nav class="nav">
+				<a href="/" class="brand">logo</a>
+				<section class="hamburgerMenu">
+					<span class="barz first-bar"></span>
+					<span class="barz second-bar"></span>
+					<span class="barz third-bar"></span>
+				</section>
+				<ul class="navList">
+					<li class="navItem"><a href="/" class="navLink">home</a></li>
+					<li class="navItem"><a href="#about" class="navLink">about</a></li>
+					<li class="navItem"><a href="#skills" class="navLink">skills</a></li>
+					<li class="navItem">
+						<a href="#projects" class="navLink">projects</a>
+					</li>
+					<li class="navItem">
+						<a href="#contact" class="navLink">contact</a>
+					</li>
+				</ul>
+			</nav>
+			<main class="main">
+				<section class="hero">
+					<section class="hero__contents">
+						<h1>
+							Alfred
+							<span class="block">
+								Thompson <span class="title--color">Ovie</span>
+							</span>
+						</h1>
+						<p>Hi, <span class="title--color">I am</span></p>
+						<section class="hero__ctaContainer">
+							<a
+								href="https://drive.google.com/file/d/1nJJ_Ik4g-y3yR7j152GSNDMq5NZlQLNy/view?usp=drive_link"
+								download="Alfred Thompson Ovie.pdf"
+								target="_blank"
+								rel="norelopener"
+								class="cta--alt"
+							>
+								<button>Download CV</button>
+							</a>
+							<a href="#contact" class="cta"> contact me </a>
+							<!-- <button class="cv">Download CV</button> -->
+						</section>
+					</section>
+				</section>
+				<section class="about" id="#about">
+					<h1 class="heading">About Me</h1>
+          <section class="profile">
+            <section class="profile__image">
+              <img src="assets/images/profile.jpg" alt="an image of alfred thompson ovie">
+            </section>
+            <section class="profile__details">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                ipsa veritatis pariatur atque deserunt ab vero consectetur illum
+                aliquam, totam, nobis labore sed natus minima earum quae. Iste,
+                dolores hic?
+              </p>
+            </section>
+          </section>
+				</section>
+				<section class="skills" id="#skills">
+					<h1 class="heading heading--alt">skills</h1>
+					<ul class="skill__container">
+            <li>
+              <label for="fuel">HTML:</label>
+              <meter
+                id="fuel"
+                min="0"
+                max="100"
+                low="33"
+                high="66"
+                value="90"
+              >
+                at 50/100
+              </meter>
+            </li>
+					</ul>
+					<p>I Am Available for Freelance!</p>
+				</section>
+				<section class="projects" id="#projects">
+          <h1 class="heading heading--alt">portfolio</h1>
+        </section>
+				<section class="contact" id="#contact">
+          <h1 class="heading heading--alt">contact me</h1>
+          <ul>
+            <li>
+              tel: +2348073328875
+            </li>
+            <li>
+              email
+            </li>
+          </ul>
+        </section>
+			</main>
+			<footer>
+        
+      </footer>
+		</div>
+		<script type="module" src="/main.js"></script>
+	</body>
 </html>

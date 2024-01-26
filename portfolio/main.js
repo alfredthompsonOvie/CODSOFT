@@ -1,24 +1,17 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+const navList = document.querySelector(".navList");
+const hamburgerMenu = document.querySelector(".hamburgerMenu");
+// const cv = document.querySelector(".cv");
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
 
-setupCounter(document.querySelector('#counter'))
+hamburgerMenu.addEventListener("click", () => {
+  navList.classList.toggle("open")
+})
+
+// cv.addEventListener("click", () => {
+//   const fileName = 'Alfred Thompson Ovie.pdf';
+//   const link = document.createElement('a');
+
+//   link.href = `https://drive.google.com/file/d/1nJJ_Ik4g-y3yR7j152GSNDMq5NZlQLNy/view?usp=drive_link/${fileName}`;
+//   link.download = fileName;
+//   link.click();
+// })
