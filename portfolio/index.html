@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+		<link href="assets/css/fontawesome/css/fontawesome.css" rel="stylesheet" />
+		<link href="assets/css/fontawesome/css/brands.css" rel="stylesheet" />
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Vite App</title>
@@ -10,14 +14,13 @@
 	<body>
 		<div id="app" class="container">
 			<nav class="nav">
-				<a href="/" class="brand">logo</a>
+				<a href="/" class="brand">ovie</a>
 				<section class="hamburgerMenu">
 					<span class="barz first-bar"></span>
 					<span class="barz second-bar"></span>
 					<span class="barz third-bar"></span>
 				</section>
 				<ul class="navList">
-					<li class="navItem"><a href="/" class="navLink">home</a></li>
 					<li class="navItem"><a href="#about" class="navLink">about</a></li>
 					<li class="navItem"><a href="#skills" class="navLink">skills</a></li>
 					<li class="navItem">
@@ -49,63 +52,271 @@
 								<button>Download CV</button>
 							</a>
 							<a href="#contact" class="cta"> contact me </a>
-							<!-- <button class="cv">Download CV</button> -->
 						</section>
 					</section>
 				</section>
-				<section class="about" id="#about">
+				<section class="about" id="about">
 					<h1 class="heading">About Me</h1>
-          <section class="profile">
-            <section class="profile__image">
-              <img src="assets/images/profile.jpg" alt="an image of alfred thompson ovie">
-            </section>
-            <section class="profile__details">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                ipsa veritatis pariatur atque deserunt ab vero consectetur illum
-                aliquam, totam, nobis labore sed natus minima earum quae. Iste,
-                dolores hic?
-              </p>
-            </section>
-          </section>
+					<section class="profile">
+						<section class="profile__image">
+							<img
+								src="assets/images/profile.jpg"
+								alt="an image of alfred thompson ovie"
+							/>
+						</section>
+						<section class="profile__details">
+							<p>
+								I'm a front-end developer eager to join an exciting company. My expertise includes crafting accessible HTML, applying modern CSS practices, and writing clean JavaScript code. While I favor Vue.js for development, I'm versatile and can adapt to different tools as needed. I'm currently based in Lagos, Nigeria, but I'm open to remote work and have experience in remote teams. I'm a diligent and result-driven developer, consistently striving for the best outcomes on every project. When I'm not coding, you'll find me reading, playing chess, or hitting the gym. Don't hesitate to explore my work
+							</p>
+						</section>
+					</section>
 				</section>
-				<section class="skills" id="#skills">
+				<section class="skills" id="skills">
 					<h1 class="heading heading--alt">skills</h1>
-					<ul class="skill__container">
-            <li>
-              <label for="fuel">HTML:</label>
-              <meter
-                id="fuel"
-                min="0"
-                max="100"
-                low="33"
-                high="66"
-                value="90"
-              >
-                at 50/100
-              </meter>
-            </li>
-					</ul>
-					<p>I Am Available for Freelance!</p>
+					<section class="skill__list__container">
+						<ul class="skill__list">
+							<li class="skill__item">
+								<section class="skill__header">
+									<p>HTML</p>
+									<p>99%</p>
+								</section>
+								<span class="skill__rating skill__rating--advanced"></span>
+							</li>
+							<li class="skill__item">
+								<section class="skill__header">
+									<p>css</p>
+									<p>99%</p>
+								</section>
+								<span class="skill__rating skill__rating--advanced"></span>
+							</li>
+							<li class="skill__item">
+								<section class="skill__header">
+									<p>sass/scss</p>
+									<p>80%</p>
+								</section>
+								<span class="skill__rating skill__rating--intermedite"></span>
+							</li>
+							<li class="skill__item">
+								<section class="skill__header">
+									<p>tailwindcss</p>
+									<p>60%</p>
+								</section>
+								<span class="skill__rating skill__rating--beginner"></span>
+							</li>
+							<li class="skill__item">
+								<section class="skill__header">
+									<p>javascript</p>
+									<p>80%</p>
+								</section>
+								<span class="skill__rating skill__rating--intermedite"></span>
+							</li>
+							<li class="skill__item">
+								<section class="skill__header">
+									<p>TypeScript</p>
+									<p>60%</p>
+								</section>
+								<span class="skill__rating skill__rating--beginner"></span>
+							</li>
+						</ul>
+						<ul class="skill__list">
+							<li class="skill__item">
+								<section class="skill__header">
+									<p>Nuxt.Js</p>
+									<p>60%</p>
+								</section>
+								<span class="skill__rating skill__rating--beginner"></span>
+							</li>
+							<li class="skill__item">
+								<section class="skill__header">
+									<p>Next.js</p>
+									<p>60%</p>
+								</section>
+								<span class="skill__rating skill__rating--beginner"></span>
+							</li>
+							<li class="skill__item">
+								<section class="skill__header">
+									<p>node.js</p>
+									<p>60%</p>
+								</section>
+								<span class="skill__rating skill__rating--beginner"></span>
+							</li>
+							<li class="skill__item">
+								<section class="skill__header">
+									<p>mongoDb</p>
+									<p>60%</p>
+								</section>
+								<span class="skill__rating skill__rating--beginner"></span>
+							</li>
+							<li class="skill__item">
+								<section class="skill__header">
+									<p>firebase</p>
+									<p>60%</p>
+								</section>
+								<span class="skill__rating skill__rating--beginner"></span>
+							</li>
+							<li class="skill__item">
+								<section class="skill__header">
+									<p>pinia</p>
+									<p>80%</p>
+								</section>
+								<span class="skill__rating skill__rating--intermedite"></span>
+							</li>
+						</ul>
+
+					</section>
+
+
 				</section>
-				<section class="projects" id="#projects">
-          <h1 class="heading heading--alt">portfolio</h1>
-        </section>
-				<section class="contact" id="#contact">
-          <h1 class="heading heading--alt">contact me</h1>
-          <ul>
-            <li>
-              tel: +2348073328875
-            </li>
-            <li>
-              email
-            </li>
-          </ul>
-        </section>
+				<section class="projects" id="projects">
+					<h1 class="heading heading--alt">portfolio</h1>
+					<section class="project__list">
+						
+						<section class="project__card">
+							<img
+								class="project__img"
+								src="assets/images/spaceTourism.jpg"
+								alt="an image of Spense.com website landing page"
+							/>
+							<section class="project__contents">
+								<h1 class="project__title">Space Tourism Website</h1>
+								<p class="project__description">
+									This project was a front-end challenge from Frontend Mentor.
+									It’s a platform that enables you to practice building websites
+									to a design and project brief. Each challenge includes mobile
+									and desktop designs to show how the website should look at
+									different screen sizes. Creating these projects has helped me
+									refine my workflow and solve real-world coding problems. I’ve
+									learned something new with each project, helping me to improve
+									and adapt my style.
+								</p>
+
+								<a href="https://ov7-space-tourism.netlify.app/" class="project__link">
+									<span>Space Tourism </span>
+									<span class="project__link__arrow">&#8594;</span>
+								</a>
+							</section>
+						</section>
+						
+						<section class="project__card">
+							<img
+								class="project__img"
+								src="assets/images/urlShortening.jpg"
+								alt="an image of YelpCamp.com website landing page"
+							/>
+							<section class="project__contents">
+								<h1 class="project__title">Url Shortener Website</h1>
+								<p class="project__description">
+									This project was a front-end challenge from Frontend Mentor.
+									It’s a platform that enables you to practice building websites
+									to a design and project brief. Each challenge includes mobile
+									and desktop designs to show how the website should look at
+									different screen sizes. Creating these projects has helped me
+									refine my workflow and solve real-world coding problems. I’ve
+									learned something new with each project, helping me to improve
+									and adapt my style.
+								</p>
+
+								<a
+									href="https://ov7-url-shortly.vercel.app/"
+									class="project__link"
+								>
+									<span>Url Shortener</span>
+									<span class="project__link__arrow">&#8594;</span>
+								</a>
+							</section>
+						</section>
+						
+						<section class="project__card">
+							<img
+								class="project__img"
+								src="assets/images/easybank.jpg"
+								alt="an image of easybank.com website landing page"
+							/>
+							<section class="project__contents">
+								<h1 class="project__title">Easybank Landing Page </h1>
+								<p class="project__description">
+									This project was a front-end challenge from Frontend Mentor.
+									It’s a platform that enables you to practice building websites
+									to a design and project brief. Each challenge includes mobile
+									and desktop designs to show how the website should look at
+									different screen sizes. Creating these projects has helped me
+									refine my workflow and solve real-world coding problems. I’ve
+									learned something new with each project, helping me to improve
+									and adapt my style.
+								</p>
+								<a
+									href="https://eivo-easybank-landing-page.netlify.app/"
+									class="project__link"
+								>
+									<span>EasyBank</span>
+									<span class="project__link__arrow">&#8594;</span>
+								</a>
+							</section>
+						</section>
+						
+						<section class="project__card">
+							<img
+								class="project__img"
+								src="assets/images/manage.jpg"
+								alt="an image of manage.com website landing page"
+							/>
+							<section class="project__contents">
+								<h1 class="project__title">Manage Landing Page</h1>
+								<p class="project__description">
+									This project was a front-end challenge from Frontend Mentor.
+									It’s a platform that enables you to practice building websites
+									to a design and project brief. Each challenge includes mobile
+									and desktop designs to show how the website should look at
+									different screen sizes. Creating these projects has helped me
+									refine my workflow and solve real-world coding problems. I’ve
+									learned something new with each project, helping me to improve
+									and adapt my style.
+								</p>
+								<a
+									href="https://ov7-manage-landing-page.netlify.app/"
+									class="project__link"
+								>
+									<span>Manage </span>
+									<span class="project__link__arrow">&#8594;</span>
+								</a>
+							</section>
+						</section>
+					</section>
+				</section>
+				<section class="contact" id="contact">
+					<section class="contact__contents">
+						<h1 class="heading heading--alt">contact me</h1>
+						<section class="contact__info">
+							<h1>Interested in working with me?</h1>
+							<p>
+								I'm active on all social media platforms listed below, but you
+								can also me an email and I will get back to you within 24-48
+								hours.
+							</p>
+							<a
+								href="mailto:alfredthompsonovie@gmail.com"
+								target="_blank"
+								rel="norelopener"
+								class="cta cta__link"
+								>Get in touch</a
+							>
+						</section>
+					</section>
+				</section>
 			</main>
-			<footer>
-        
-      </footer>
+			<footer class="footer">
+				<section class="footer__contents">
+					<a href="/" class="brand">ovie</a>
+					<ul class="social__media__list">
+						<li>
+							<a href="https://www.linkedin.com/in/alfredthompsonovie/" target="_blank" rel="norelopener"><i class="fa-brands fa-linkedin"></i></a>
+						</li>
+						<li>
+							<a href="https://github.com/alfredthompsonOvie" target="_blank" rel="norelopener"><i class="fa-brands fa-github"></i></a>
+						</li>
+					</ul>
+				</section>
+			</footer>
 		</div>
 		<script type="module" src="/main.js"></script>
 	</body>

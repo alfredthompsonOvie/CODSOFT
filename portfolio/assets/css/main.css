@@ -10,6 +10,7 @@
 	--accent: #0e72a4;
 
 	box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -37,6 +38,9 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+.brand {
+  font-size: 2rem;
 }
 .hamburgerMenu {
 	cursor: pointer;
@@ -144,7 +148,15 @@ body {
 .cta--alt {
   background-color: var(--secondary);
 }
-
+.cta__link {
+  padding: 1em 2em;
+  display: inline-block;
+  transition: all .3s linear;
+}
+.cta__link:hover {
+  background-color: var(--secondary);
+  color: var(--text);
+}
 
 .heading {
   color: var(--primary);
@@ -152,25 +164,11 @@ body {
   font-size: clamp(2rem, 8vw, 5rem);
   text-align: center;
 }
-/* .heading--alt {
-  position: relative;
-}
-.heading--alt::before {
-  position: absolute;
-  content: "SKILLS";
-  top: -.3em;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: clamp(3rem, 6vw, 10rem);
-  color: var(--text);
-  opacity: .3;
-  letter-spacing: 20px;
-} */
+
 .profile__image {
   margin: 2em auto;
   max-width: 250px;
   width: 100%;
-  /* overflow: hidden; */
   text-align: center;
 }
 .profile__image img {
@@ -179,17 +177,136 @@ body {
 }
 
 .skills {
-  margin-top: 3em;
+  margin: 5em 0 3em;
 }
-.skill__container {
+.skill__list {
   max-width: 800px;
-  margin: 0 auto;
-  background-color: red;
+  margin: 2em auto 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.skill__item {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+.skill__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill__header p {
+  opacity: .6;
+  text-transform: uppercase;
+}
+.skill__rating {
+  background-color: var(--accent);
+  height: 4px;
+  display: block;
+  border: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.skill__rating--advanced {
+  width: 99%;
+}
+.skill__rating--intermedite {
+  width: 80%;
+}
+.skill__rating--beginner {
+  width: 60%;
+}
+.projects {
+
+}
+.project__list {
+  display: grid;
+  gap: 4em;
+  margin: 3em 0 1em;
+}
+.project__title {
+  margin-top: 1em;
+  font-size: 1.5rem;
+}
+.project__description {
+  margin: 1em 0 1.5em;
+}
+.project__link {
+  display: inline-block;
+  font-size: 1.2rem;
+  background-color: var(--primary);
+  color: var(--background);
+  padding: .1em 1em;
+  display: inline-flex;
+  align-items: center;
+  gap: .5em;
+}
+.project__link__arrow {
+  font-size: 2rem;
+	margin-bottom: .2em;
+}
+.contact  {
+  margin: 3em 0 1em;
+}
+.contact__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact__info {
+  margin: 2em 0;
+}
+.contact__info h1 {
+  font-size: 2rem;
+}
+.contact__info p {
+  max-width: 400px;
+  width: 100%;
+  margin: 1em 0;
 }
 
 .footer {
-  grid-column: 2;
+  grid-column: 1/-1;
   grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: auto;
+  background-color: var(--secondary);
+  color: var(--background);
+  margin-top: 1.5em;
+}
+.footer__contents {
+  grid-column: 2;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  color: var(--text);
+}
+.social__media__list {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.fa-brands {
+  font-size: 1.5em;
+}
+.fa-brands:hover {
+  color: var(--background);
+}
+@media (min-width: 450px) {
+  .project__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5em;
+    margin: 3em 0 1em;
+  }
+  .footer__contents {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 768px){
@@ -220,7 +337,6 @@ body {
 
     max-width: 600px;
     margin-inline: auto;
-    /* background-color: red; */
   }
   .profile__image {
     margin: 0;
@@ -232,8 +348,17 @@ body {
     width: 100%;
     height: 100%;
     top: 1em;
-    left: 2em;
+    left: 1em;
     content: "";
     z-index: -1;
+  }
+  .skill__list__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5em;
+  }
+  .skill__list{
+    flex: 1;
   }
 }
