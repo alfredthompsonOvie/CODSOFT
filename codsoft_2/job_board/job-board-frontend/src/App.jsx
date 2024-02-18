@@ -14,6 +14,10 @@ import About from "./pages/About";
 import Layout from "./components/ui/Layout";
 import GlobalStyles from "./assets/css/GlobalStyles";
 
+
+
+// codsoft_𝒕𝒂𝒔𝒌𝒏𝒐
+
 function App() {
 	return (
 		<BrowserRouter>
